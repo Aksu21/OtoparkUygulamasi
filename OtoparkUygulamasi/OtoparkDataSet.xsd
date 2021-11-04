@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OtoparkDataSet" targetNamespace="http://tempuri.org/OtoparkDataSet.xsd" xmlns:mstns="http://tempuri.org/OtoparkDataSet.xsd" xmlns="http://tempuri.org/OtoparkDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OtoparkConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OtoparkConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtoparkUygulamasi.Properties.Settings.GlobalReference.Default.OtoparkConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TarifelerTableAdapter" GeneratorDataComponentClassName="TarifelerTableAdapter" Name="Tarifeler" UserDataComponentName="TarifelerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OtoparkConnectionString (Settings)" DbObjectName="Otopark.dbo.Tarifeler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Aktif FROM dbo.Tarifeler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Aktif" DataSetColumn="Aktif" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OtoparkDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OtoparkDataSet" msprop:Generator_UserDSName="OtoparkDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tarifeler" msprop:Generator_TableClassName="TarifelerDataTable" msprop:Generator_TableVarName="tableTarifeler" msprop:Generator_TablePropName="Tarifeler" msprop:Generator_RowDeletingName="TarifelerRowDeleting" msprop:Generator_RowChangingName="TarifelerRowChanging" msprop:Generator_RowEvHandlerName="TarifelerRowChangeEventHandler" msprop:Generator_RowDeletedName="TarifelerRowDeleted" msprop:Generator_UserTableName="Tarifeler" msprop:Generator_RowChangedName="TarifelerRowChanged" msprop:Generator_RowEvArgName="TarifelerRowChangeEvent" msprop:Generator_RowClassName="TarifelerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Aktif" msprop:Generator_ColumnVarNameInTable="columnAktif" msprop:Generator_ColumnPropNameInRow="Aktif" msprop:Generator_ColumnPropNameInTable="AktifColumn" msprop:Generator_UserColumnName="Aktif" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
